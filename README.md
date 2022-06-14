@@ -1,18 +1,25 @@
-# vscode-sql-template-literal
+# vscode-rust-template-literals
 
 Syntax highlighting for code like:
 
 ```js
-const query = sql`SELECT * FROM users`;
+const helloWorld = rust`
+  fn main() {
+    println!("Hello World!");
+  }
+`;
 ```
 
-## Publishing
+## Usage
 
-May require token, stored in last pass. Go to
-https://forbeslindesay.visualstudio.com/_details/security/tokens if token needs
-regenerating.
+This package is not currently published to the marketplace. Instead you will need to package and install the extension manually.
 
+```shell
+npx vsce package
 ```
-npm install -g vsce
-vsce publish
+
+This will generate a vscode-rust-template-literals-0.1.0.vsix file. You can then [install the vsix file](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix):
+
+```shell
+code --install-extension vscode-rust-template-literals-0.1.0.vsix
 ```

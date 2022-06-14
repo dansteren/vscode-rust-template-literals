@@ -1,1 +1,5 @@
-const query = sql`SELECT * FROM users`;
+const helloWorld = rust`
+  fn main() {
+    println!("Hello World!");
+  }
+`;

@@ -4,8 +4,8 @@
   "patterns": [
     {
       "name": "taggedTemplates",
-      "contentName": "meta.embedded.block.sql",
-      "begin": "sql((`))",
+      "contentName": "meta.embedded.block.rust",
+      "begin": "rust((`))",
       "beginCaptures": {
         "1": {
           "name": "entity.name.function.tagged-template.js"
@@ -31,10 +31,10 @@
           "include": "source.ts#template-substitution-element"
         },
         {
-          "include": "source.sql"
+          "include": "source.rust"
         }
       ]
     }
   ],
-  "scopeName": "inline.lit-sql"
+  "scopeName": "inline.lit-rust"
 }

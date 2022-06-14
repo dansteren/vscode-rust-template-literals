@@ -1,13 +1,13 @@
 {
-    "name": "vscode-sql-template-literal",
-    "displayName": "vscode-sql-template-literal",
-    "description": "Syntax highlighting for sql in template literals",
+    "name": "vscode-rust-template-literals",
+    "displayName": "Rust Template Literals",
+    "description": "Syntax highlighting for rust in template literals",
     "version": "0.1.0",
-    "publisher": "forbeslindesay",
+    "publisher": "Dan Steren",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ForbesLindesay/vscode-sql-template-literal.git"
+        "url": "https://github.com/dansteren/vscode-rust-template-literals.git"
     },
     "engines": {
         "vscode": "^1.5.0"
@@ -25,10 +25,10 @@
                     "source.ts",
                     "source.tsx"
                 ],
-                "scopeName": "inline.lit-sql",
-                "path": "./syntaxes/lit-sql.json",
+                "scopeName": "inline.lit-rust",
+                "path": "./syntaxes/lit-rust.json",
                 "embeddedLanguages": {
-                    "meta.embedded.block.sql": "sql"
+                    "meta.embedded.block.rust": "rust"
                 }
             }
         ]
